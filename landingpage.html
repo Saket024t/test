@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main_container {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-image: linear-gradient(180deg, rgba(0, 0, 255, 0.146), rgba(0, 0, 0, 0.123));
+            height: 100%;
+            z-index: -2;
+        }
+
+        #a {
+            margin: 15vh 0 0;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(0, 55, 155);
+        }
+
+        #b {
+            margin: 3vh 0;
+            font-size: 34px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            color: rgb(0, 55, 155);
+        }
+
+        #c {
+            margin: 4vh 15vh;
+            padding: 0 4vh;
+            font-size: larger;
+            line-height: 28px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgba(64, 64, 78, 0.882);
+            /* background-color: blue; */
+        }
+
+        #e {
+            /* background-color: blue;
+             */
+            position: absolute;
+            z-index: -1;
+            top: 10%;
+            left: 1%;
+            /* background-color: blue; */
+        }
+
+        #d button {
+            font-size: 20px;
+            margin: 4vh 4vw;
+            padding: 8px 12px;
+            border: none;
+            background-color: rgb(0, 55, 155);
+            color: white;
+            border-radius: 5px;
+        }
+
+        #e img {
+            float: left;
+        }
+
+        #f {
+            position: absolute;
+            z-index: -1;
+            padding: 0;
+            top: 60%;
+            right: 1%;
+
+            /* background-color: blueviolet; */
+        }
+
+        #f img {
+            float: right;
+        }
+
+        #g {
+            height: 200px;
+            width: 100%;
+        }
+
+
+
+        #inside-h {
+            margin: 2vh 10vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: red; */
+            padding: 3vw;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom: 1px solid rgb(37, 36, 40);
+            border-right: 1px solid rgb(37, 36, 40);
+            border-top: 1px solid rgb(37, 36, 40);
+            background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.023), rgba(255, 255, 0, 0.4));
+        }
+
+        #inside-h img {
+            border-radius: 50%;
+            margin-right: 1vw;
+        }
+
+        #inside-h p {
+            text-align: left;
+            font-size: 20px;
+            line-height: 28px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgba(64, 64, 78, 0.882);
+
+        }
+
+        #inside-i {
+            margin: 2vh 10vw;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            /* background-color: red; */
+            padding: 3vw;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom: 1px solid rgb(37, 36, 40);
+            border-left: 1px solid rgb(37, 36, 40);
+            border-top: 1px solid rgb(37, 36, 40);
+            background-image: linear-gradient(90deg, rgba(255, 255, 0, 0.4), rgba(255, 255, 255, 0.023));
+
+        }
+
+        #inside-i img {
+            border-radius: 50%;
+            margin-left: 1vw;
+        }
+
+        #inside-i p {
+            text-align: left;
+            font-size: 20px;
+            line-height: 28px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgba(64, 64, 78, 0.882);
+        }
+    </style>
+</head>
+
+<body>
+    <nav style="height: 50px; background-color: rgb(39, 35, 35);"></nav>
+    <div class="main_container">
+        <div id="a">
+            <h2>Welcome to</h2>
+        </div>
+        <div id="b">
+            <h1>Servico</h1>
+        </div>
+        <div id="c">
+            <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur molestias doloremque, deserunt
+                ducimus tationem corrupti placeat voluptates?
+                Cupiditate numquam illum nostrum! Quam obcaecati reiciendis eveniet!</h4>
+            <h4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quidem nihil consequatur porro ratione
+                explicabo, tempore magnam illo voluptatum officia. </h4>
+        </div>
+        <div id="d">
+            <button>sign in</button>
+            <button>sign up</button>
+        </div>
+        <div id="e">
+            <img src="acRepair.png" alt="" height="20%" width="20%">
+        </div>
+        <div id="f">
+            <img src="cleaningService.png" alt="" height="25%" width="25%">
+        </div>
+
+        <div id="g">
+
+        </div>
+        <div id="h">
+            <div id="inside-h">
+                <img src="7495.jpg" alt="" width="15%">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo explicabo minus, veniam nihil accusamus
+                    eum praesentium dignissimos id quos aliquam nulla amet a! Velit expedita magnam, earum est atque
+                    exercitationem.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo explicabo minus, veniam
+                    nihil accusamus
+
+                </p>
+            </div>
+        </div>
+        <div id="i">
+            <div id="inside-i">
+                <img src="7495.jpg" alt="" width="15%">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo explicabo minus, veniam nihil accusamus
+                    eum praesentium dignissimos id quos aliquam nulla amet a! Velit expedita magnam, earum est atque
+                    exercitationem.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo explicabo minus, veniam
+                    nihil accusamus
+
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
