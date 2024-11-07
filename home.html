@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .main-parent-div {
+            /* background-color: pink; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .section1 {
+            display: flex;
+            justify-content: space-around;
+            padding: 2vh 10vw;
+            border: 1px solid black;
+        }
+
+        .section2 {
+            border: 1px solid black;
+
+        }
+
+        .section2-inner-div {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            background-color: #2196F3;
+        }
+
+        .section2-inner-items {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+
+        }
+
+        .section3 {
+            /* border: 1px solid black; */
+            /* background-color: white; */
+            margin: 2vw;
+            border: 1px solid gray;
+            padding :4vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 4vh;
+        }
+
+        .section3 h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            align-self: flex-start;
+            margin: 4vh 5vw;
+        }
+
+        .section3-grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 50px;
+            row-gap: 50px;
+
+        }
+
+        .section3-card-a {
+            width: 24vw;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgba(80, 80, 84, 0.5);
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgb(54, 55, 57);
+        }
+
+        .a-body {
+
+            /* background-color: antiquewhite; */
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .a-body h5,
+        .a-body h3,
+        .a-body button {
+            margin: 2vh 2vw;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .a-body h3 {
+            font-size: 32px;
+            color: rgb(13, 13, 14);
+            margin: 2vh 2vw;
+        }
+
+        .a-body h5 {
+            font-size: 18px;
+
+            color: rgb(82, 83, 88);
+            line-height: 1.5;
+        }
+
+        .a-body button {
+            border: none;
+            color: white;
+            font-size: 18px;
+            background-color: rgb(13, 13, 14);
+            padding: 1.5vh 4vw;
+            border-radius: 5px;
+        }
+
+        .a-img {
+            text-align: center;
+        }
+
+
+
+
+
+        .section4 {
+
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2vw;
+            border: 1px solid gray;
+            margin-bottom: 8vh;
+
+        }
+
+        .section4 h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            align-self: flex-start;
+            margin: 4vh 5vw;
+        }
+
+        .section4-card-b {
+            display: flex;
+            background-color: white;
+            width: 55vw;
+            margin: 4vh 2vw;
+            /* background-color: antiquewhite; */
+            align-items: center;
+            justify-content: space-evenly;
+            overflow: hidden;
+            border: 1px solid rgba(80, 80, 84, 0.5);
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgb(54, 55, 57);
+        }
+
+        .b-img {
+            /* width: 50%; */
+        }
+
+        .b-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .b-body h3,
+        .b-body h5,
+        .b-body button {
+            margin: 2vh 2vw;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .b-body h3 {
+            font-size: 32px;
+            color: rgb(13, 13, 14);
+            margin: 2vh 2vw;
+        }
+
+        .b-body h5 {
+            font-size: 18px;
+            color: rgb(82, 83, 88);
+            /* line-height: 1.5; */
+        }
+
+        .b-body button {
+            border: none;
+            color: white;
+            font-size: 18px;
+            background-color: rgb(13, 13, 14);
+            padding: 1.5vh 4vw;
+            border-radius: 5px;
+        }
+
+
+
+
+        .section5 {
+            background-color: black;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 4vh;
+            
+        }
+
+        .section5-grid {
+            display: flex;
+        }
+
+        .section5 h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 32px;
+            align-self: flex-start;
+            margin: 4vh 5vw;
+        }
+
+        .section5-card-c {
+            height: 18vw;
+            width: 18vw;
+            background-image: linear-gradient(45deg, #614385, #516395);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 5px;
+            margin: 2vh 2vw;
+        }
+
+        #sec5-box-id1 {
+            background-image: linear-gradient(45deg, rgb(1, 26, 255), #0afcfcc6);
+
+        }
+
+        #sec5-box-id2 {
+            background-image: linear-gradient(45deg, #ff1313, #ffbf7a);
+
+        }
+
+        #sec5-box-id3 {
+            background-image: linear-gradient(45deg, rgb(7, 129, 0), rgb(146, 223, 154));
+
+        }
+
+        .section5-card-c h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+            margin: 2vh 2vw;
+        }
+
+        .section5-card-c h5 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            color: rgb(255, 255, 255);
+            line-height: 1.2;
+        }
+
+        .section5-card-c button {
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+            color: white;
+            font-size: 16px;
+            background-color: rgb(13, 13, 14);
+            padding: 1.5vh 4vw;
+            margin-top: 1.5vh;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<div>
+    <div class="main-parent-div">
+        <div>
+            <h1>Services At Your Doorstep</h1>
+        </div>
+
+        <div class="section1">
+            <div class="apply-filter"><button>Filter</button></div>
+            <div class="search-box">
+                <form class="example">
+                    <input type="text" id="searchField" placeholder="Search.." name="search">
+                    <button onclick="searchService()">search</button>
+                </form>
+            </div>
+        </div>
+        <div class="section2">
+            <h2>
+                what are your looking for?
+            </h2>
+            <div class="section2-inner-div">
+                <div class="section2-inner-div1 section2-inner-items"></div>
+                <div class="section2-inner-div2 section2-inner-items"></div>
+                <div class="section2-inner-div3 section2-inner-items"></div>
+                <div class="section2-inner-div4 section2-inner-items"></div>
+                <div class="section2-inner-div5 section2-inner-items"></div>
+                <div class="section2-inner-div6 section2-inner-items"></div>
+                <div class="section2-inner-div7 section2-inner-items"></div>
+                <div class="section2-inner-div8 section2-inner-items"></div>
+            </div>
+
+        </div>
+        <div class="section3">
+
+            <h1>Vehicle Repair</h1>
+            <div class="section3-grid">
+                <div class="section3-card-a">
+                    <div class="a-img"><img src="7495.jpg" width="50%" alt=""></div>
+                    <div class="a-body">
+                        <h3>service name</h3>
+                        <h5>service detail Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequuntur
+                            quod
+                            assumenda harum, voluptatibus non mollitia nam atque doloremque? Voluptatum.</h5>
+                        <button>book</button>
+                    </div>
+                </div>
+                <div class="section3-card-a">
+                    <div class="a-img"><img src="7495.jpg" width="50%" alt=""></div>
+                    <div class="a-body">
+                        <h3>service name</h3>
+                        <h5>service detail Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequuntur
+                            quod
+                            assumenda harum, voluptatibus non mollitia nam atque doloremque? Voluptatum.</h5>
+                        <button>book</button>
+                    </div>
+                </div>
+
+
+                <div class="section3-card-a">
+                    <div class="a-img"><img src="7495.jpg" width="50%" alt=""></div>
+                    <div class="a-body">
+                        <h3>service name</h3>
+                        <h5>service detail Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequuntur
+                            quod
+                            assumenda harum, voluptatibus non mollitia nam atque doloremque? Voluptatum.</h5>
+                        <button>book</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="section4">
+
+            <h1>House Cleaning</h1>
+
+            <div class="section4-card-b">
+                <img class="b-img" src="7495.jpg" width="35%" alt="">
+                <div class="b-body">
+                    <h3>service name</h3>
+                    <h5>service detail Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequuntur quod
+                        assumenda harum, voluptatibus non mollitia nam atque doloremque? Voluptatum.</h5>
+                    <button>book</button>
+                </div>
+            </div>
+            <div class="section4-card-b">
+                <img class="b-img" src="7495.jpg" width="35%" alt="">
+                <div class="b-body">
+                    <h3>service name</h3>
+                    <h5>service detail Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequuntur quod
+                        assumenda harum, voluptatibus non mollitia nam atque doloremque? Voluptatum.</h5>
+                    <button>book</button>
+                </div>
+            </div>
+            <div class="section4-card-b">
+                <img class="b-img" src="7495.jpg" width="35%" alt="">
+                <div class="b-body">
+                    <h3>service name</h3>
+                    <h5>service detail Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequuntur quod
+                        assumenda harum, voluptatibus non mollitia nam atque doloremque? Voluptatum.</h5>
+                    <button>book</button>
+                </div>
+            </div>
+        </div>
+        <div class="section5">
+            <h1>pick And Drop</h1>
+            <div class="section5-grid">
+                <div class="section5-card-c" id="sec5-box-id1">
+                    <h3> heading</h3>
+                    <h5>Lorem ipsum dolor Odit, recusandae perspiciatis aliquam accusamus
+                        iure illum unde dolorum beatae eos debitis!</h5>
+                    <button>book</button>
+                </div>
+                <div class="section5-card-c" id="sec5-box-id2">
+                    <h3> heading</h3>
+                    <h5>Lorem ipsum dolor Odit, recusandae perspiciatis aliquam accusamus
+                        iure illum unde dolorum beatae eos debitis!</h5>
+                    <button>book</button>
+                </div>
+                <div class="section5-card-c" id="sec5-box-id3">
+                    <h3> heading</h3>
+                    <h5>Lorem ipsum dolor Odit, recusandae perspiciatis aliquam accusamus
+                        iure illum unde dolorum beatae eos debitis!</h5>
+                    <button>book</button>
+                </div>
+                <div class="section5-card-c" id="sec5-box-id4">
+                    <h3> heading</h3>
+                    <h5>Lorem ipsum dolor Odit, recusandae perspiciatis aliquam accusamus
+                        iure illum unde dolorum beatae eos debitis!</h5>
+                    <button>book</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section6">
+            something
+        </div>
+
+        <div class="section7">
+            <h1>Other</h1>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    function searchService() {
+        console.log("dd");
+        let temp = document.getElementsByClassName("jjj");
+
+    }
+</script>
+</body>
+
+</html>
